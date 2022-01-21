@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
 .firstSection{
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 620px;
   justify-content: space-between;
   margin-bottom: 150px ;
 }
@@ -17,17 +18,19 @@
 }
 
 .headLine{
-  max-width: 680px;
+  width: 60%;
   display: flex;
+  
 }
 
 .textHeadline{
   margin-top: 50px;
-  max-width: 580px;
+  width: 100%;
   justify-content: space-around;
   align-self: auto;
+
   h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
   }
   h2{
@@ -51,6 +54,9 @@
 .devices{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  
+  word-wrap: break-word;
 
 div{
   display: flex;
@@ -60,7 +66,6 @@ div{
   h1{
     font-size: 3rem;
     width: 50%;
-    min-width: 500px;
     
 
   }
@@ -86,6 +91,7 @@ div{
   h1{
     margin:20px auto;
     font-size: 3rem;
+    text-align: center;
 
   }
   .service{
@@ -113,7 +119,6 @@ div{
   }
   .models{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
     .model{
@@ -122,6 +127,7 @@ div{
       text-align: center;
       margin: 0 10px;
       height: 400px;
+      
     }
   }
 }
@@ -129,8 +135,8 @@ div{
 .contact{
   display: flex;
   align-items: center;
-  height: 250px;
   justify-content: space-between;
+  text-align: center;
   h1{
     font-size: 4rem;
     font-weight: 900;
@@ -144,4 +150,61 @@ div{
     font-size: 1.2rem;
     font-weight: 600;
   }
+}
+
+@media(max-width:720px){
+.imageHeadline{
+  display: none;
+}
+.headLine{
+  width: 100%;
+  h1{
+    font-size: 3rem;
+    font-weight: 800;
+    hyphens: auto;
+  }
+}
+.devices{
+  div{
+    flex-direction: column;
+    h1{
+      width: 100%;
+    }
+    p{
+      width: 100%;
+    }
+  }
+}
+.models{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.model{
+  height: 200px;
+  background-color: sandybrown;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  h1{
+    font-size: 4rem;
+    font-weight: 900;
+
+  }
+  button{
+    background-color: var(--purple);
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
 }

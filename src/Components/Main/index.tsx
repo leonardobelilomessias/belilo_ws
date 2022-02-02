@@ -1,87 +1,169 @@
 import Image from 'next/image'
 import style from './styles.module.scss'
 import statue from '../../../public/mic.png'
-import devices from '../../../public/devices.png'
 import {MdTaskAlt} from 'react-icons/md'
+import Aws from '../../../public/img/brands/aws.png'
+import Google from '../../../public/img/brands/goole.png'
+import Microsoft from '../../../public/img/brands/micro.png'
+import Apple from '../../../public/img/brands/mac.png'
+import FaceBook from '../../../public/img/brands/face.png'
+import StarComent from '../../../public/StarComents.png'
+
 
 
 export function Main(){
   return(
     <main className={style.main}>
       <div className={style.firstSection}>
+            
         <div className={style.headLine}>
           <div className={style.textHeadline}>
-            <h1>Desenvolvimento de softwares, Apps e sites.</h1>
-            <h2> Tire sua ideia do papel com nossos serviços especializados</h2>
-            <h3>Somos uma empresa especializada em criação de ferramentas tecnologicas na implementação de recuso para a aceleração de negocios no mundo digital</h3>
-            <button>Veja Exemplos</button>
+            <h4>Moderno a moda antiga</h4>
+            <h1>Desenvolvimento de softwares, sites, apps e ferramentas tecnologicas</h1>
+            <h3>Desenvolvemos Ferramentas e utilidades Tecnologicas para impulsinar ideias e negocios ou pessoas no mundo digital com Tecnologia de ponta do mercado e com a classica Qualidade.</h3>
+            <button>Ver Serviços</button>
           </div>
         </div>
         <div className={style.imageHeadline}>
-          <Image  src={statue} alt='statue'></Image>
+          <Image   src={statue} alt='statue' ></Image>
         </div>
       </div>
+      <section className={style.brands}>
+        <p>Empresas parceiras</p>
+        <div className={style.imgsBrands}>
+          <div className={style.brand}>
+            <div className={style.imgteste}>
 
-        <section className={style.devices}>
-          <div>
-            <h1>Seu projeto em todos os dispositivos</h1>
-            <p> Tabalhamos a resposividade do seu projeto para que ele esteja adequado em todos os tipos de dispositivos para os seus clientes.</p>
+          <Image  src={Aws}  alt="aws"  ></Image>
+            </div>
+            <p>Amazon</p>
           </div>
-          <Image src={devices}  alt='devices'/>
+          <div className={style.brand}>
+            <Image src={Google}   alt="aws"></Image>
+            <p>Google</p>
+          </div>
+          <div className={style.brand}>
+            <Image src={FaceBook}  alt="aws"></Image>
+            <p>Facebook</p>
+          </div>
+          <div className={style.brand}>
+            <Image className={style.imgBrand} src={Microsoft}  alt="aws"></Image>
+            <p>Microsoft</p>
+          </div>
+          <div className={style.brand}>
+            <Image className={style.imgBrand}  src={Apple}  alt="aws"></Image>
+            <p>Apple</p>
+          </div>
+        </div>
+      </section>
+        <section className={style.digitalServices}>
+          <div className={style.imageDigitalService}>
+          </div>
+          <div className={style.textDigitalService}>
+            <div >
+                <h1>Tire sua ideia do papel e coloque no digital.</h1>
+            </div>
+            <div>
+                <ul>
+                  <li>Site institucional</li>
+                  <li>Ecommerce</li>
+                  <li>LeadingPage</li>
+                  <li>Aplicativo mobile</li>
+                  <li>Sistema interno</li>
+                </ul>
+            </div>
+          </div>
+        </section>
+        <section className={style.consultFree}> 
+          <p>Ainda não sabe como digitalizar seu negocio? Te ajudamos com isso de graça!</p>
+          <button>Consultoria Gratis</button>
         </section>
 
+        <section className={style.examples}>
+          <h1>Casos de Sucesso</h1>
+          <div className={style.models}>
+            <div className={style.model}>modelo 1</div>
+            <div className={style.model}>modelo2</div>
+            <div className={style.model}>modelo3</div>
+          </div>
+          <div className={style.models}>
+            <div className={style.model}>modelo 1</div>
+            <div className={style.model}>modelo2</div>
+            <div className={style.model}>modelo3</div>
+          </div>
+        </section>
+
+        <section className={style.depoiment}>
+          <p className={style.titleDepoiment}>Depoimentos:</p>
+            <div className={style.contentDepoiment}>
+                <Image src={StarComent} alt='StarComents'></Image>
+              <p >
+              “ Tivemos um experiencia incrivel utilizando o serviços Belilo. 
+              Tinhamos muito medo de não dar certo ,Mas cada explicação sobre o funcionamento
+              do negocio me fazia tem mais confiança do meu sonho. Enfim hoje é uma realidade”
+              </p>
+          <p className={style.nameDepoiment}>Cezar Agnus - CaseinCase</p>
+            </div>
+
+        </section>
+
+
         <section className={style.listServices}>
-          <h1>Nossos serviços disponiveis</h1>
+          <h1>Mais sobre nossos serviços</h1>
           <div className={style.service}>
             <div className={style.itemService}>
                 <MdTaskAlt size={40}/>
               <h2>Desenvolvimento</h2>
-              <p>Desenvolvimento de sites com tecnologias de ponta que são tendencias de mercado</p>
+              <p>Pesquisamos, elaboramos e criamos o produto com as melhores tenologias do mercado</p>
             </div>
             <div className={style.itemService}>
               <MdTaskAlt size={40}/>
-              <h2>Iu/Ix</h2>
-              <p>Interfaces que  cativam cada usario prezando por uma experiencia agradavel</p>
+              <h2>Seo</h2>
+              <p>Apareça em primeiro lugar no Google. Trabalhamos com otimização de SEO(Search Engine Optimization)</p>
             </div>
             <div className={style.itemService}>
                 <MdTaskAlt size={40}/>
-              <h2>Seo</h2>
-              <p>Otimização para ser encontrado nos mecanismos de busca </p>
+              <h2>Desing</h2>
+              <p>Criação de Layout Baseado em UI/UX. Garantido a melhor experiência do usuario.</p>
             </div>
           </div>
 
           <div className={style.service}>
             <div className={style.itemService}>
                 <MdTaskAlt size={40}/>
-              <h2>Ecommerce</h2>
-              <p>Criação da sua loja virtual para faturar mais com seus produtos fisicos</p>
+              <h2>Responsividade</h2>
+              <p>Suas paginas e sites em qualquer tela de dispositivo. Para que seu produto estaja disponivel em todas plataformas</p>
             </div>
             <div className={style.itemService}>
                 <MdTaskAlt size={40}/>
-              <h2>Email Marketing</h2>
-              <p>Serviço  de email personalizado para manter contato com seus clientes</p>
+              <h2>Dashboard</h2>
+              <p>Dashboard personalizada para facilitação da organização de dados e informaçoes do software, site, sistema ou app.</p>
             </div>
             <div className={style.itemService}>
               <MdTaskAlt size={40}/>
-              <h2>Blog</h2>
-              <p>Criação de blog para você atualizar sua informaçoes </p>
+              <h2>Integração</h2>
+              <p>Conectamos nossos serviços e produtos com serviços externos como facebook,Google, Instagram, Mercado Livre Etc. </p>
             </div>
           </div>
         </section>
-        
-        <section className={style.examples}>
-          <h1>Alguns exemplos de casos</h1>
-          <div className={style.models}>
-          <div className={style.model}>modelo 1</div>
-          <div className={style.model}>modelo2</div>
-          <div className={style.model}>modelo3</div>
-          </div>
-        </section>
+
         
         <section className={style.contact}>
-          <h1>Entre em contato conosco e saiba mais.</h1>
-          <button>Entrar em contato</button>
+          <div className={style.imgContact}>
+
+          </div>
+          <div className={style.itemsContact}>
+            <h1>Entre agora para o digital!</h1>
+            <button>Entrar em contato</button>
+          </div>
+
         </section>
+
+
+
+
+        
+        
     </main>
   )
 }

@@ -8,10 +8,12 @@ import Microsoft from '../../../public/img/brands/micro.png'
 import Apple from '../../../public/img/brands/mac.png'
 import FaceBook from '../../../public/img/brands/face.png'
 import StarComent from '../../../public/StarComents.png'
+import { useState } from 'react'
 
 
 
 export function Main(){
+
   return(
     <main className={style.main}>
       <div className={style.firstSection}>
@@ -21,7 +23,7 @@ export function Main(){
             <h4>Moderno a moda antiga</h4>
             <h1>Desenvolvimento de softwares, sites, apps e ferramentas tecnologicas</h1>
             <h3>Desenvolvemos Ferramentas e utilidades Tecnologicas para impulsinar ideias e negocios ou pessoas no mundo digital com Tecnologia de ponta do mercado e com a classica Qualidade.</h3>
-            <button>Ver Serviços</button>
+            <button className={style.buttonHeadline}>Ver Serviços</button>
           </div>
         </div>
         <div className={style.imageHeadline}>

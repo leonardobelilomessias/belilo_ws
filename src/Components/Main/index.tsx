@@ -27,33 +27,47 @@ export function Main(){
           </div>
         </div>
         <div className={style.imageHeadline}>
-          <Image   src={statue} alt='statue' ></Image>
+          <div>
+
+          <Image   src={statue} width={650} height={650}alt='statue' ></Image>
+          </div>
         </div>
       </div>
       <section className={style.brands}>
         <p>Empresas parceiras</p>
         <div className={style.imgsBrands}>
           <div className={style.brand}>
-            <div className={style.imgteste}>
+            <div >
 
-          <Image  src={Aws}  alt="aws"  ></Image>
+          <Image  src={Aws} width={50} height={50} alt="aws"  ></Image>
             </div>
             <p>Amazon</p>
           </div>
           <div className={style.brand}>
-            <Image src={Google}   alt="aws"></Image>
+            <div>
+
+            <Image src={Google} width={50} height={50}  alt="aws"></Image>
+            </div>
             <p>Google</p>
           </div>
           <div className={style.brand}>
-            <Image src={FaceBook}  alt="aws"></Image>
+            <div>
+
+            <Image src={FaceBook} width={50} height={50} alt="aws"></Image>
+            </div>
             <p>Facebook</p>
           </div>
           <div className={style.brand}>
-            <Image className={style.imgBrand} src={Microsoft}  alt="aws"></Image>
+            <div>
+
+            <Image className={style.imgBrand}  width={50} height={50} src={Microsoft}  alt="aws"></Image>
+            </div>
             <p>Microsoft</p>
           </div>
           <div className={style.brand}>
-            <Image className={style.imgBrand}  src={Apple}  alt="aws"></Image>
+            <div>
+            <Image className={style.imgBrand} width={50} height={50} src={Apple}  alt="aws"></Image>
+            </div>
             <p>Apple</p>
           </div>
         </div>
@@ -84,14 +98,14 @@ export function Main(){
         <section className={style.examples}>
           <h1>Casos de Sucesso</h1>
           <div className={style.models}>
-            <div className={style.model}>modelo 1</div>
-            <div className={style.model}>modelo2</div>
-            <div className={style.model}>modelo3</div>
+            <div className={style.model}><p>Natcults</p></div>
+            <div className={style.model}><p>Puzzle Piece</p></div>
+            <div className={style.model}><p>Amazon Delivery</p></div>
           </div>
           <div className={style.models}>
-            <div className={style.model}>modelo 1</div>
-            <div className={style.model}>modelo2</div>
-            <div className={style.model}>modelo3</div>
+            <div className={style.model}><p>HubStack</p></div>
+            <div className={style.model}><p>Legacy Conect</p></div>
+            <div className={style.model}><p>GoLana</p></div>
           </div>
         </section>
 

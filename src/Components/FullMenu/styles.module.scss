@@ -3,8 +3,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-
   text-align: center;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
   p{
     margin-top: 2rem;
     font-size: 3rem;

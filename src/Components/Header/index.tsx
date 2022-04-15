@@ -1,6 +1,7 @@
 import style from './styles.module.scss'
 import {AiOutlineMenu,AiOutlineQuestionCircle} from 'react-icons/ai'
 import { useState, } from 'react'
+import Link from 'next/link'
 
 type HeaderProps =  {
   menux: boolean
@@ -18,7 +19,7 @@ export function Header({menux,handleMenux}:HeaderProps):any{
     <h1> Belilo</h1> 
     <nav className={style.nav}>
       <a href="#"> Inicio</a>
-      <a href="#">Sobre</a>
+      <Link href="about"><a>Sobre</a></Link>
       <a href="#">Blog</a>
       <a href="#">Contato</a>
     </nav>

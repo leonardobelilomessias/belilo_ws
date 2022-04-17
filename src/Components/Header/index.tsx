@@ -18,9 +18,10 @@ export function Header({menux,handleMenux}:HeaderProps):any{
   <header className={style.customHeader}>
     <h1> Belilo</h1> 
     <nav className={style.nav}>
-      <a href="#"> Inicio</a>
-      <Link href="about"><a>Sobre</a></Link>
-      <a href="#">Blog</a>
+    <Link href="/"><a> Inicio</a></Link>
+    <Link href="/about"><a> Sobre</a></Link>
+      <a href="#">Serviços</a>
+      <a href="#">Preços</a>
       <a href="#">Contato</a>
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>
@@ -30,11 +31,11 @@ export function Header({menux,handleMenux}:HeaderProps):any{
 {/*       <button> Contact</button> */}
   </header>
       {menux && <nav className={style.navMobile}>
-      <a href="#">Inicio</a>
-      <a href="#">Blog</a>
-      <a href="#">Portifolio</a>
-      <a href="#">Tecnologias</a>
+      <Link href="/"><a> Inicio</a></Link>
+      <Link href="/about"><a> Sobre</a></Link>
       <a href="#">Serviços</a>
+      <a href="#">Preços</a>
+      <a href="#">Contato</a>
     </nav>}
     
   </>

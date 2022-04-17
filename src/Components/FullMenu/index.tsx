@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './styles.module.scss'
 type FullMenuProps={
   menux:boolean
@@ -9,11 +10,11 @@ export function FullMenu({menux,handleMenux}:FullMenuProps){
     <>
     <nav className={style.menu}>
     <p>MENU</p>
-      <a href="#">Inicio</a>
-      <a href="#">Blog</a>
-      <a href="#">Portifolio</a>
-      <a href="#">Tecnologias</a>
+    <Link href="/"><a> Inicio</a></Link>
+    <Link href="/about"><a> Sobre</a></Link>
       <a href="#">Serviços</a>
+      <a href="#">Preços</a>
+      <a href="#">Contato</a>
 
     <button onClick={handleMenux}>Fechar</button>
     </nav>

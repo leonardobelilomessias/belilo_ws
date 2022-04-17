@@ -22,7 +22,7 @@ export default function Home() {
         menux?<FullMenu menux={menux} handleMenux={handleMenux}></FullMenu>:
           <>
             <Main/>
-            <Footer/>
+            
           </>
       }
 

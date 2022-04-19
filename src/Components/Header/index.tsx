@@ -1,6 +1,5 @@
 import style from './styles.module.scss'
-import {AiOutlineMenu,AiOutlineQuestionCircle} from 'react-icons/ai'
-import { useState, } from 'react'
+import {AiOutlineMenu} from 'react-icons/ai'
 import Link from 'next/link'
 
 type HeaderProps =  {
@@ -8,11 +7,8 @@ type HeaderProps =  {
   handleMenux:VoidFunction
 
 }
-export function Header({menux,handleMenux}:HeaderProps):any{
-  const [menu,setMenu] = useState(false)
-  function handleMenu(){
-    setMenu(!menu)
-  }
+export function Header({menux,handleMenux}:HeaderProps){
+
   return(
     <>
   <header className={style.customHeader}>
@@ -26,9 +22,6 @@ export function Header({menux,handleMenux}:HeaderProps):any{
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>
 
-    
-    
-{/*       <button> Contact</button> */}
   </header>
       {menux && <nav className={style.navMobile}>
       <Link href="/"><a> Inicio</a></Link>

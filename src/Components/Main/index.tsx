@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import style from './styles.module.scss'
-import statue from '../../../public/mic.png'
 import {MdTaskAlt} from 'react-icons/md'
 import Aws from '../../../public/img/brands/aws.png'
 import Google from '../../../public/img/brands/goole.png'
@@ -8,12 +7,8 @@ import Microsoft from '../../../public/img/brands/micro.png'
 import Apple from '../../../public/img/brands/mac.png'
 import FaceBook from '../../../public/img/brands/face.png'
 import StarComent from '../../../public/StarComents.png'
-import { useState } from 'react'
-
-
 
 export function Main(){
-
   return(
     <main className={style.main}>
       <div className={style.firstSection}>
@@ -28,8 +23,7 @@ export function Main(){
         </div>
         <div className={style.imageHeadline}>
           <div>
-
-          <Image   src={statue} width={650} height={650}alt='statue' ></Image>
+            
           </div>
         </div>
       </div>

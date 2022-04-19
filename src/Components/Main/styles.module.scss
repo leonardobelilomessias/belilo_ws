@@ -12,13 +12,15 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0 8.2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .imageHeadline{
-  background:url('../../../public/Vector\ 1.png') no-repeat;
-  background-position: center left;
-  background-size: 430px;
+  flex: 1;
+  background:url('../../../public/touch.jpg') no-repeat;
+  background-size: cover;
+
+  
 
 
 }

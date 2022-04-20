@@ -2,50 +2,38 @@ import React from 'react'
 import style from '../styles/about.style.module.scss' 
 import Image from 'next/image'
 import Website from '../../public/website.png'
+import Head from 'next/head'
 
 function About() {
   return (
     <>
+    <Head>
+      <title>Sobre</title>
+    </Head>
     <div className={style.firstSection}>
-      <h1>Sobre Nós</h1>
-      <h2>Tiramos seu plano do papel, colocamos no digital e damos novos poderes ao seu negocio.</h2>
-      <h3>Desenvolvemos serviços tecnológicos como sites institucionais, blogs, ecommercer e aplicativos 
-        e outros diversos tipos de ferramentas que auxiliam negócios físicos e digitais aumentar a o seu desempenho , 
-        margem de lucro e alcançar ainda mais pessoas, através de ferramentas de tecnologia de ponta do mercado.
+      <h1>Quem somos ?</h1>
+      <h2>Somos Experts em Executar Ideias</h2>
+      <h3>Fazemos produtos, ideias, sonhos e negocios sair do campo da imaginação e colocamos em pratica no mundo digital.
+
       </h3>
       <button>Ver Serviços</button>
+
+      <h1>Oque Fazemos?</h1>
+      <h2>Potencializamos Resultados</h2>
+      <h3>Autentou em 67,8% o numero de negocios feito na internet ou via aplicativos.
+        Com as tecnologias mais avançadas damos poderes digitais para você atingir o seu potencial maximo,
+        Alcançando novas pessoas, conquisando novos cliente e aumentando sua lucratividade.
+      </h3>
+      <button>Veja Casos de sucesso </button>
+
+      <h1>Como fazemos</h1>
+      <h2>Desenvolvemos Produtos tecnologicos</h2>
+      <h3>Desenvolvemos serviços tecnológicos como sites institucionais, blogs, ecommercer e aplicativos 
+        e outros diversos tipos de ferramentas que auxiliam negócios físicos e digitais .
+      </h3>
+      <button>Fazer Simulação</button>
     </div>
 
-    <div className={style.secondSection}>
-      <h1>Nossos serviços</h1>
-      <div className={style.listService}>
-        <div className={style.service}>
-          <span>Sites Estaticos ou Institucionais</span>
-          <div><Image alt='web' src={Website} width={200} height={200}></Image></div>
-          <p>Demonstre sua presença
-            no mundo digital com elegantes e modernos. Ideal para sites pessoais e institucionais.
-          </p>
-          <button>Ver Mais</button>
-        </div>
-        <div className={style.service}>
-          <span>Capitura de leads ou leadpages</span>
-          <div><Image alt='web' src={Website} width={200} height={200}></Image></div>
-          <p>
-          Demonstre sua presença
-          no mundo digital com elegantes e modernos. Ideal para sites pessoais e institucionais.
-          </p>
-          <button>Ver Mais</button>
-        </div>
-        <div className={style.service}>
-          <span>Sites Estaticos ou Institucionais</span>
-          <div><Image alt='web' src={Website} width={200} height={200}></Image></div>
-          <p>Demonstre sua presença
-            no mundo digital com elegantes e modernos. Ideal para sites pessoais e institucionais.
-          </p>
-          <button>Ver Mais</button>
-        </div>
-      </div>
-    </div>
     </>
   )
 }

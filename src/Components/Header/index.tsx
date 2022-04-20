@@ -16,8 +16,8 @@ export function Header({menux,handleMenux}:HeaderProps){
     <nav className={style.nav}>
     <Link href="/"><a> Inicio</a></Link>
     <Link href="/about"><a> Sobre</a></Link>
-      <a href="#">Serviços</a>
-      <a href="#">Preços</a>
+    <Link href="/services"><a> Serviços</a></Link>
+      <a href="#">Simulador</a>
       <a href="#">Contato</a>
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>

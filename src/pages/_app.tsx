@@ -5,6 +5,7 @@ import { Footer } from '../Components/Footer'
 import { FullMenu } from '../Components/FullMenu'
 import { Header } from '../Components/Header'
 import '../styles/globals.scss'
+
 function MyApp({ Component, pageProps }:AppProps) {
   const [menux,setMenux]= useState(false)
   function handleMenux(){

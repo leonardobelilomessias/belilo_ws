@@ -17,7 +17,7 @@ export function Header({menux,handleMenux}:HeaderProps){
     <Link href="/"><a> Inicio</a></Link>
     <Link href="/about"><a> Sobre</a></Link>
     <Link href="/services"><a> Serviços</a></Link>
-      <a href="#">Simulador</a>
+    <Link href="/simulator"><a> Simulador</a></Link>
       <a href="#">Contato</a>
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>
@@ -26,8 +26,8 @@ export function Header({menux,handleMenux}:HeaderProps){
       {menux && <nav className={style.navMobile}>
       <Link href="/"><a> Inicio</a></Link>
       <Link href="/about"><a> Sobre</a></Link>
-      <a href="#">Serviços</a>
-      <a href="#">Preços</a>
+      <Link href="/services"><a> Serviços</a></Link>
+      <Link href="/simulator"><a> Simulador</a></Link>
       <a href="#">Contato</a>
     </nav>}
     

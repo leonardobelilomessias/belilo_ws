@@ -1,0 +1,24 @@
+
+.itemSection{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap-reverse;
+ align-items: center;
+ justify-content: space-around;
+ width: 100%;
+ margin: 2rem 0rem;
+}
+
+.imageSection{
+  width: auto;
+}
+
+.infoSection{
+  width: 400px;
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+}

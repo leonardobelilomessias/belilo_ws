@@ -12,6 +12,7 @@ export function Header({menux,handleMenux}:HeaderProps){
   return(
     <>
   <header className={style.customHeader}>
+     
     <h1> Belilo</h1> 
     <nav className={style.nav}>
     <Link href="/"><a> Inicio</a></Link>

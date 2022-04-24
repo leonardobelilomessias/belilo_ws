@@ -9,7 +9,7 @@ function Simulator() {
       <title>Simulator</title>
     </Head>
     <div>
-      <h1>Simulador</h1>  
+
       <MySimulator/>
     </div>
     </>

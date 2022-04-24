@@ -12,18 +12,16 @@ function MySimulator() {
 
   return (
     <div>
-   
 
-      <h1>Escolha o seu tipo de site</h1>
       <StepsSimulation 
-      stepsTitles={['Passo1','Passo2','Passo3']} 
-      stepsDescriptions={['descrição passo 1', 'descriçao paso2','descrição paso3']}
+      stepsTitles={['Tipo Projeto','Detalhes do projeto','Gerar simulação']} 
+      stepsDescriptions={[
+      'Escolha o tipo de projeto', 
+      'Adicione as caracteristicas do projeto',
+      'Receba as informaçoes do seu projeto'
+    ]}
       content={ProductsSimulator}
       />
-
-
-
-
     </div>
   )
 }

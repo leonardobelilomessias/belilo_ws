@@ -1,23 +1,38 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
+import SendSimulator from './SendSimulator'
 
-function FormSimulator({setCurrent}) {
+function FormSimulator({setCurrent,style,setService,service}) {
   const [nextStep,setNextStep] = useState(0)
-  const handleNextStep = useCallback((event,setCurrent)=>{
+  const[pages,setPages]=useState('')
+  const[sections,setSections]=useState('')
+  const[updates,setUpdates]=useState('')
+  const handleNextStep = useCallback((event,setCurrent,arr)=>{
     event.preventDefault()
     setCurrent(2)
-    setNextStep(3)
-    console.log(nextStep)
+    const details = {pages:arr[0],sections:arr[1],updates:arr[2]}
+    setService([...service,{details:details}])
   },[])
+  useEffect(()=>{
+    console.log(pages)
+  },[pages])
   return (
     <>
     {nextStep===0 ? 
-        <form>
-        {nextStep}
-      <input type="text" id="lname" name="lname"/>
-      <button onClick={(event)=>{handleNextStep(event,setCurrent)}}>Proximo</button>
+      <form className={style}>
+
+        <label><p>Paginas</p></label>
+        <input type="text" onChange={(e)=>{setPages(e.target.value)}} name="pages"/>
+        
+        <label ><p>Secçoes</p></label>
+        <input type="text"  onChange={(e)=>{setSections(e.target.value)}} name="sections"/>
+        <label ><p>Atualizaçoes</p></label>
+        <input type="text"   onChange={(e)=>{setUpdates(e.target.value)}}name="updates"/>
+        <button onClick={(event)=>{handleNextStep(event,setCurrent,[pages,sections,updates])}}>Proximo</button>
+
+       
       </form>:
       <>
-      <h2>Enviar</h2>
+   
       <button>Enviar</button>
       </>
       

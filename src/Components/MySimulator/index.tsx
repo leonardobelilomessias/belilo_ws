@@ -22,6 +22,7 @@ function MySimulator() {
     ]}
       content={ProductsSimulator}
       />
+  
     </div>
   )
 }

@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
+import api  from '../../services/api'
 
 function SendSimulator({setCurrent,style,setService,service}) {
   const[email,setEmail] = useState('')
-  function handleSendSimulation(){
+  async function handleSendSimulation(){
     setService([...service,{email:email}])
     setCurrent(3)
-
+    const response = await api.post('/SendTest',{service,email:email})
+    console.log(response.data)
+    
 
   }
   return (

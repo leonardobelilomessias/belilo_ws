@@ -6,12 +6,15 @@ import ProductsSimulator from './ProductsSimulator'
 import SendSimulator from './SendSimulator'
 import Step from './Step'
 import style from './stepSimulator.styles.module.scss'
+
 function StepsSimulation({stepsTitles,stepsDescriptions,content}) {
   const [service,setService] = useState([])
   const [currentStep,setCurrentStep]=useState(0)
+
   return (
     <div className={style.containerSimulator}>
     <h1>Simulador</h1>  
+
     <div className={style.steps}>
       {stepsTitles.map((step,index)=>(
             <Step  key={step} title={step} 

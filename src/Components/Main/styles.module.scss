@@ -36,6 +36,9 @@
   width: 100%;
   justify-content: space-around;
   align-self: auto;
+  display: flex;
+  flex-direction: column;
+
 
   h1{
     font-size: 3.5rem;
@@ -55,6 +58,7 @@
 
   }
   .buttonHeadline{
+    display: flex;
     font: 700 1.1rem 'Roboto', sans-serif;
     background-color: var(--blue-500);
     color: white;
@@ -62,6 +66,8 @@
     height: 50px;
     margin-top: 25px;
     border: var(--blue-500);
+    align-items: center;
+    justify-content: center;
 
   }
 }
@@ -309,6 +315,7 @@
   .textHeadline{
     text-align: center;
     margin-top: 0;
+    align-items: center;
 
     .buttonHeadline{
 

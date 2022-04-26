@@ -7,6 +7,7 @@ import Microsoft from '../../../public/img/brands/micro.png'
 import Apple from '../../../public/img/brands/mac.png'
 import FaceBook from '../../../public/img/brands/face.png'
 import StarComent from '../../../public/StarComents.png'
+import Link from 'next/link'
 
 export function Main(){
   return(
@@ -18,7 +19,11 @@ export function Main(){
             <h4>A Primeira impressão é a que fica no digital</h4>
             <h1>Desenvolvimento de Sites e Aplicativos</h1>
             <h3>Somos especialistas em tecnologia e damos poderes as suas ideia no mundo digital.</h3>
-            <button className={style.buttonHeadline}>Simular meu projeto</button>
+            <Link href="/simulator" >
+              <a className={style.buttonHeadline} >
+               Simular meu projeto
+              </a>
+            </Link>
           </div>
         </div>
         <div className={style.imageHeadline}>

@@ -1,0 +1,24 @@
+
+.depoiment{
+  background-color: var(--blue-200);
+  padding: 20px 100px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  .titleDepoiment{
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .contentDepoiment{
+    font-style: italic;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+  }
+  .nameDepoiment{
+    font-weight: 700;
+
+  }
+
+  
+}

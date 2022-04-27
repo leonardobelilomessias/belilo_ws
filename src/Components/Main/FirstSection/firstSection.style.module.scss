@@ -1,0 +1,62 @@
+.firstSection{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 8.2rem;
+  margin-top: 1rem;
+}
+
+.imageHeadline{
+  flex: 1;
+  background:url('../../../../public/touchid.png') no-repeat;
+  background-size: 110%;
+}
+
+.headLine{
+  width: 55%;
+  display: flex;
+}
+
+
+.textHeadline{
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-around;
+  align-self: auto;
+  display: flex;
+  flex-direction: column;
+
+
+  h1{
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+  }
+  h4{
+    font: 700 2rem 'Roboto', sans-serif;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    
+  }
+  h3{
+    font: 500 1.5rem 'Roboto', sans-serif;
+    color: var(--gray-300);
+    margin-top: 20px;
+
+  }
+  .buttonHeadline{
+    display: flex;
+    font: 700 1.1rem 'Roboto', sans-serif;
+    background-color: var(--blue-500);
+    color: white;
+    width: 280px;
+    height: 50px;
+    margin-top: 25px;
+    border: var(--blue-500);
+    align-items: center;
+    justify-content: center;
+
+  }
+}

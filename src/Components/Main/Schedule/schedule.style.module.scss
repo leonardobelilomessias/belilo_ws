@@ -1,0 +1,22 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: aquamarine;
+}
+.box{
+  background-color: red;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  div{
+    background-color: blueviolet;
+    margin: 1rem;
+
+  }
+}
+.content{
+
+}

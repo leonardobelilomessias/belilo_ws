@@ -22,7 +22,7 @@ export function Header({menux,handleMenux}:HeaderProps){
     
     <Link href="/">
       <a onClick={()=>{setPath("/")}}>
-        <h1> Belilo</h1> 
+        <h1> filsher </h1> 
       </a>
     </Link>
 

@@ -14,7 +14,6 @@ export function Header({menux,handleMenux}:HeaderProps){
     setPath('/')
   },[])
   const router = useRouter()
-  console.log(router.asPath===path)
   return(
     <>
   <header className={style.customHeader}>

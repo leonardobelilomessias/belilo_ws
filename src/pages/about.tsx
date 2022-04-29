@@ -1,4 +1,8 @@
 import React from 'react'
+import result from '../../public/result.jpg'
+import idea from '../../public/idea.jpg'
+import develop from '../../public/develop.png'
+
 import style from '../styles/about.style.module.scss' 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -12,30 +16,22 @@ function About() {
       <title>Sobre</title>
     </Head>
 
-
-
-
     <div className={style.firstSection}>
-
     <div className={style.itemSection}>
-
-      <div className={style.imageSection}>
-        <Image alt='idea' src={Lamp} width={300} height={300}/>
-      </div>
+      <div className={style.imageSectionIdea}></div>
       <div className={style.infoSection}>
-        <h1>Quem somos ?</h1>
-        <h2>Somos Experts em Executar Ideias</h2>
-        <h3>Fazemos produtos, ideias, sonhos e negocios sair do campo da imaginação e colocamos em pratica no mundo digital.
-        </h3>
+           <h1>Quem somos ?</h1>
+          <h2>Somos Experts em Executar Ideias</h2>
+          <h3>
+            Fazemos produtos, ideias, sonhos e negocios sair do campo da imaginação e colocamos em pratica no mundo digital.
+          </h3>
         <button>Ver Serviços</button>
       </div>
 
     </div>
-    <hr />
+    
     <div className={style.itemSection}>
-      <div className={style.imageSection}>
-        <Image alt='idea' src={Results} width={300} height={300}/>
-      </div>
+    <div className={style.imageSectionIdea}></div>
       <div className={style.infoSection}>
         <h1>Oque Fazemos?</h1>
         <h2>Potencializamos Resultados</h2>
@@ -46,11 +42,9 @@ function About() {
         <button>Veja Casos de sucesso </button>
       </div>
     </div>
-<hr />
+
     <div className={style.itemSection}>
-      <div className={style.imageSection}>
-        <Image alt='idea' src={Tecnology} width={300} height={300}/>
-      </div>
+      <div className={style.imageSectionIdea}></div>
       <div className={style.infoSection}>
           <h1>Como fazemos</h1>
           <h2>Desenvolvemos Produtos tecnologicos</h2>

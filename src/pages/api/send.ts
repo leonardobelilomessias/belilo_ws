@@ -8,8 +8,6 @@ export default (request:NextApiRequest,response:NextApiResponse)=>{
   const [{type},{details}] = service
   const variables = {name:'Fulado', type, pages:details.pages,updates:details.updates}
 
-
-
     // Create a SMTP transporter object
     let transporter = nodemailer.createTransport({ 
       service: 'gmail', 

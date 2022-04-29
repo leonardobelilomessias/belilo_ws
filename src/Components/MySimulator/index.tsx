@@ -5,14 +5,9 @@ import FormSimulator from './FormSimulator';
 import ProductsSimulator from './ProductsSimulator';
 import SendSimulator from './SendSimulator';
 
-
-
 function MySimulator() {
-
-
   return (
     <div>
-
       <StepsSimulation 
       stepsTitles={['Tipo Projeto','Detalhes do projeto','Gerar simulação']} 
       stepsDescriptions={[

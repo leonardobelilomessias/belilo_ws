@@ -4,7 +4,6 @@ function FinalySimulator({setCurrent,style,setService,service}) {
   const[{type},{details},{email}]= service
   
   function handleFinalySimulation(){
-    console.log(details)
     setService([])
     setCurrent(0)
   }

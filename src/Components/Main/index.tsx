@@ -7,6 +7,8 @@ import Cases from './Cases'
 import Testimonals from './Testimonals'
 import ListServices from './ListServices'
 import Contact from './Contact'
+import GetService from './GetService'
+import GetPrice from './GetPrice'
 
 export function Main(){
   return(
@@ -14,8 +16,8 @@ export function Main(){
       <FirstSection/>
 
         <Brands/>
+{/*         <DigitalServices/> */}
         <Schedule/>
-        <DigitalServices/>
         <section className={style.consultFree}> 
           <p>Ainda não sabe como digitalizar seu negocio? Te ajudamos com isso de graça!</p>
           <button>Consultoria Gratis</button>
@@ -25,7 +27,7 @@ export function Main(){
         <Testimonals/>
         <ListServices/>
         <Contact/>
-        
+
     </main>
   )
 }

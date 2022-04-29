@@ -1,18 +1,24 @@
 .firstSection{
+
   text-align: center;
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
   h1{
     font-size: 1.5rem;   
-    margin-top: 1.5rem;
-
-  }
+    }
   h2{
     font-size: 3.5rem;
   }
   h3{
     font-size: 1.2rem;
-    margin-top: 1rem;
+
+    
   }
   button{
     width: 270px;
@@ -26,22 +32,43 @@
   }
 }
 
-
-
 .itemSection{
+  margin: 2rem auto;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  align-items: center;
  justify-content: space-around;
  width: 100%;
- margin: 2rem 0rem;
+ border: 1px solid rgba(189, 189, 189, 0.582);
+
+ justify-content: space-around;
+ align-content: space-between;
 }
 
-.imageSection{
-  width: auto;
+.imageSectionIdea{
+  background-color: red;
+  flex:1;
+  height: 400px;
+  background-image: url('../../public/idea.jpg');
+  background-size: cover;
+  filter: brightness(0.60);;
 }
+.imageSectionResult{
+  background-color: red;
+  background-image: url('../../public/result.jpg');
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.imageSectionDevelop{
+  background-color: red;
+  background-image: url('../../public/develop.jpg');
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
 
 .infoSection{
-  width: 700px;
+width: 650px;
+padding: 2rem;
 }

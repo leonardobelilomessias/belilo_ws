@@ -1,40 +1,48 @@
 
-.digitalServices{
+.container{
   display: flex;
   padding: 1rem 5rem;
   word-wrap: break-word;
   align-content: center;
   justify-content: center;
-  .textDigitalService{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-
-    h1{
-      font-size: 2.5rem;
-      text-align: center;
-      font-weight: 900;
-      margin: 20px 0;
-      color: #000000;      
-    }
-
+  border: 1px solid gray;
+  h1{
+    text-align: center;
   }
-  .imageDigitalService{
-    width:60%;
-    height: 400px;
-    background: url('../../../../public/screenwhite.jpg') ;
-    background-size: cover;
-    background-position: center;
+}
+.box{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgb(209, 19, 19);
+}
+.content{
 
-  }
-  ul{
-    padding-left: 74px;
-    li{
-      list-style-position: inside;
-      font-size: 1.4rem;
-      color: var(--gray-300);
-      line-height: 2.3rem;
-      
-    }
-  }
+  display: flex;
+  justify-content: space-around;
+}
+.titleCard{
+
+  border-radius: 8px;
+}
+.card{
+
+  text-align: center;
+  border-radius: 8px;
+  width: 300px;
+  border: 1px solid black;
+}
+.imageCard{
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+ 
+
+  background-color: chartreuse;
+}
+.footerCard{
+
+  width: 100%;
+  height: 2rem;
+  border-radius: 8px;
 }

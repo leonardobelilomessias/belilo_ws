@@ -13,7 +13,6 @@ function FormSimulator({setCurrent,style,setService,service}) {
     setService([...service,{details:details}])
   },[])
   useEffect(()=>{
-    console.log(pages)
   },[pages])
   return (
     <>

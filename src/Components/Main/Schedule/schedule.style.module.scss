@@ -8,6 +8,7 @@
     text-align: center;
     font-size: 3rem;
     margin: 2rem;
+    text-transform: capitalize;
   }
 
 }
@@ -15,7 +16,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
   margin: 1rem auto;
   justify-content: space-around;
   margin: 2rem auto;
@@ -25,7 +26,8 @@
 
     margin: 1rem;
     flex-direction: column;
-    width: 350px;
+    padding: 2rem;
+    width: 370px;
     background-color: white;
     border: solid 1px rgba(112, 112, 112, 0.63);
     box-shadow: 5px 10px 20px rgba(84, 144, 235, 0.377);
@@ -35,7 +37,7 @@
 
     
     h2{
-      top: -25px;
+      top: -45px;
       right: -45%;
       font-size: 2.5rem;
       text-align: center;
@@ -54,6 +56,7 @@
     }
     p{
       margin: 1rem;
+      text-align: center;
     }
   }
 }

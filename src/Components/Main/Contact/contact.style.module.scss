@@ -3,7 +3,8 @@
   background: var(--blue-200);
   .imgContact{
     background-color: violet;
-    background: url('../../../../public/imgContact.png');
+    background: url('../../../../public/contact.jpg');
+    background-size: cover;
     height: 500px;
     width: 50%;
   }

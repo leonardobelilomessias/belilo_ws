@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import api  from '../../services/api'
 
-function SendSimulator({setCurrent,style,setService,service}) {
+function SendSimulator({setCurrent,style,setService,service}:any) {
   const[email,setEmail] = useState('')
 
   async function handleSendSimulation(){

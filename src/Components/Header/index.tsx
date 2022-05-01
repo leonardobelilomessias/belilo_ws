@@ -45,10 +45,12 @@ export function Header({menux,handleMenux}:HeaderProps){
       <div/>
       </a>
     </Link>
+    <Link href="contact">
       <a className={router.asPath ==="/contact"?style.active:''}>
       <p>contato</p> 
         <div/>
         </a>
+      </Link>
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>
 

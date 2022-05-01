@@ -9,6 +9,7 @@ import ListServices from './ListServices'
 import Contact from './Contact'
 import GetService from './GetService'
 import GetPrice from './GetPrice'
+import DataInfo from './DataInfo'
 
 export function Main(){
   return(
@@ -23,7 +24,7 @@ export function Main(){
           <p>Ainda não sabe como digitalizar seu negocio? Te ajudamos com isso de graça!</p>
           <button>Consultoria Gratis</button>
         </section>
-
+        <DataInfo/>
         <Cases/>
         <Testimonals/>
         <ListServices/>

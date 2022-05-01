@@ -1,7 +1,7 @@
 .firstSection{
 
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -33,14 +33,14 @@
 }
 
 .itemSection{
-  margin: 2rem auto;
+  margin-bottom: 2rem ;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  align-items: center;
  justify-content: space-around;
  width: 100%;
- border: 1px solid rgba(189, 189, 189, 0.582);
+
 
  justify-content: space-around;
  align-content: space-between;
@@ -52,21 +52,47 @@
   height: 400px;
   background-image: url('../../public/idea.jpg');
   background-size: cover;
-  filter: brightness(0.60);;
+  filter: brightness(0.60);
 }
 .imageSectionResult{
+  flex:1;
+  height: 400px;
   background-color: red;
   background-image: url('../../public/result.jpg');
   background-size: cover;
-  filter: grayscale(100%);
+  filter: brightness(0.60);
 }
 .imageSectionDevelop{
+  flex:1;
+  height: 400px;
   background-color: red;
   background-image: url('../../public/develop.jpg');
   background-size: cover;
-  filter: grayscale(100%);
+  filter: brightness(0.60);
 }
 
+.head{
+
+  background-color: red;
+  background: url('../../public/bg-tech.jpg');
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  h1{
+    width: 90%;
+    margin: auto;
+    color: black;
+    text-shadow: 3px 3px 5px rgb(122, 122, 122);
+    font-size: 2rem;
+    text-align: center;
+    
+    span{
+      background-color: var(--blue-500);
+      color: white;
+    }
+  }
+}
 
 .infoSection{
 width: 650px;

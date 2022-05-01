@@ -1,22 +1,23 @@
 import React from 'react'
-import result from '../../public/result.jpg'
-import idea from '../../public/idea.jpg'
-import develop from '../../public/develop.png'
 
 import style from '../styles/about.style.module.scss' 
 import Head from 'next/head'
-import Image from 'next/image'
-import Lamp from '../../public/lampada.png'
-import Results from '../../public/compare.png'
-import Tecnology from '../../public/technology.png'
+
 function About() {
   return (
     <>
     <Head>
       <title>Sobre</title>
     </Head>
-
+    <div className={style.head}>
+    <h1>&quot; Democratizamos a 
+         <span> TECNOLOGIA </span>oferecendo produtos e serviços para que
+         <span>TODOS</span> tenham <span> OPORTUNIDADE </span> 
+          e de ter uma experiencia <span> DIGNA </span>  no <span> DIGITAL </span>  &quot;
+          </h1>
+    </div>
     <div className={style.firstSection}>
+      
     <div className={style.itemSection}>
       <div className={style.imageSectionIdea}></div>
       <div className={style.infoSection}>
@@ -31,7 +32,7 @@ function About() {
     </div>
     
     <div className={style.itemSection}>
-    <div className={style.imageSectionIdea}></div>
+    <div className={style.imageSectionResult}></div>
       <div className={style.infoSection}>
         <h1>Oque Fazemos?</h1>
         <h2>Potencializamos Resultados</h2>
@@ -44,7 +45,7 @@ function About() {
     </div>
 
     <div className={style.itemSection}>
-      <div className={style.imageSectionIdea}></div>
+      <div className={style.imageSectionDevelop}></div>
       <div className={style.infoSection}>
           <h1>Como fazemos</h1>
           <h2>Desenvolvemos Produtos tecnologicos</h2>

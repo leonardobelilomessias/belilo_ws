@@ -1,5 +1,9 @@
 
 .brands{
+  @media (max-width:600px) {
+    display: none;
+    
+  }
   margin-top: 50px;
   display: flex;
   padding: 0 20px;
@@ -25,6 +29,7 @@
       p{
         font: 900 1rem 'Roboto', sans-serif;
         margin:5px 10px;
+        min-width: 85px;
       }
       
       display: flex;
@@ -35,11 +40,5 @@
       text-align: center;
     }
 
-  }
-}
-
-@media(max-width:600px) {
-  .brands{
-    display: none !important;
   }
 }

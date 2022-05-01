@@ -38,12 +38,7 @@ export function Header({menux,handleMenux}:HeaderProps){
       <div/>
       </a>
     </Link>
-    <Link href="/services">
-      <a className={router.asPath ==="/services"?style.active:''}>
-        <p>Serviços</p> 
-      <div/>
-      </a>
-    </Link>
+
     <Link href="/simulator">
       <a className={router.asPath ==="/simulator"?style.active:''}>
       <p>Simulador</p> 

@@ -2,10 +2,10 @@ import React, { useCallback, useState } from 'react'
 import FormSimulator from './FormSimulator'
 import style from './style.module.scss'
 
-function ProductsSimulator({current,setCurrent,setService,service}) {
+function ProductsSimulator({current,setCurrent,setService,service}:any) {
   const services = ['Site Estatico ou intitucional','Blog','Ecommerce','Leadpage','Aplicativo mobile','Sistemas Empresariais']
 
-  const handleChoiceService= useCallback(async(serviceChosen,setCurrent)=>{
+  const handleChoiceService= useCallback(async(serviceChosen:any,setCurrent:any)=>{
     const addService = {type:serviceChosen}
     setService([...service,addService])
     setCurrent(1)

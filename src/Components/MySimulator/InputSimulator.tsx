@@ -1,6 +1,6 @@
 import React from 'react'
 
-function InputSimulator({type,name}) {
+function InputSimulator({type,name}:any) {
   return (
 <input type={type} name={name}/>
   )

@@ -5,7 +5,7 @@ function Contact() {
     <>
       <section className={style.contact}>
           <div className={style.imgContact}>
-
+            oi
           </div>
           <div className={style.itemsContact}>
             <h1>Entre agora para o digital!</h1>

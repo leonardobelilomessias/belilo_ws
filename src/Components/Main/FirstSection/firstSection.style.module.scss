@@ -60,3 +60,35 @@
 
   }
 }
+
+@media(max-width:600px) {
+
+  .firstSection{
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageHeadline{
+    display: none;
+  }
+  .headLine{
+    width: 100%;
+    h1{
+      font-size: 3rem;
+      font-weight: 800;
+      hyphens: auto;
+    }
+  }
+  .textHeadline{
+    text-align: center;
+    margin-top: 0;
+    align-items: center;
+
+    .buttonHeadline{
+
+      z-index: 9999;
+      }
+  
+  }
+}

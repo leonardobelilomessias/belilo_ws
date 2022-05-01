@@ -37,3 +37,9 @@
 
   }
 }
+
+@media(max-width:600px) {
+  .brands{
+    display: none !important;
+  }
+}

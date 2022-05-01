@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import SendSimulator from './SendSimulator'
 
-function FormSimulator({setCurrent,style,setService,service}) {
+function FormSimulator({setCurrent,style,setService,service}:any) {
   const [nextStep,setNextStep] = useState(0)
   const[pages,setPages]=useState('')
   const[sections,setSections]=useState('')
   const[updates,setUpdates]=useState('')
-  const handleNextStep = useCallback((event,setCurrent,arr)=>{
+  const handleNextStep = useCallback((event:any,setCurrent:any,arr:any) =>{
     event.preventDefault()
     setCurrent(2)
     const details = {pages:arr[0],sections:arr[1],updates:arr[2]}

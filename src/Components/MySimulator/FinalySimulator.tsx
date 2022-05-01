@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FinalySimulator({setCurrent,style,setService,service}) {
+function FinalySimulator({setCurrent,style,setService,service}:any) {
   const[{type},{details},{email}]= service
   
   function handleFinalySimulation(){

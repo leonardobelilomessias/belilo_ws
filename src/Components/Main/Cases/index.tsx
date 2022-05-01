@@ -15,17 +15,17 @@ function Cases() {
 
             <div className={style.model}>
               <div className={style.background}></div>
-              <div className={style.imgBackground}><Image src={Natcults} /> </div>
+              <div className={style.imgBackground}><Image alt="" width={300} height={300} src={Natcults} /> </div>
 
             </div>
 
             <div className={style.model}>
               <div className={style.background}></div>
-              <div className={style.imgBackground} ><Image   src={Target} /> </div>
+              <div className={style.imgBackground} ><Image  alt="" width={300} height={300} src={Target} /> </div>
             </div>
             <div className={style.model}>
               <div className={style.background}></div>
-              <div className={style.imgBackground} >  <Image src={FastFree} /> </div>
+              <div className={style.imgBackground} >  <Image alt="" width={300} height={300} src={FastFree} /> </div>
              
 
             </div>
@@ -34,17 +34,17 @@ function Cases() {
 
 <div className={style.model}>
   <div className={style.background}></div>
-  <div className={style.imgBackground}><Image src={Natcults} /> </div>
+  <div className={style.imgBackground}><Image alt="" width={300} height={300}src={Natcults} /> </div>
 
 </div>
 
 <div className={style.model}>
   <div className={style.background}></div>
-  <div className={style.imgBackground} ><Image   src={Target} /> </div>
+  <div className={style.imgBackground} ><Image  alt="" width={300} height={300} src={Target} /> </div>
 </div>
 <div className={style.model}>
   <div className={style.background}></div>
-  <div className={style.imgBackground} >  <Image src={FastFree} /> </div>
+  <div className={style.imgBackground} >  <Image  alt="" width={300} height={300} src={FastFree} /> </div>
  
 
 </div>

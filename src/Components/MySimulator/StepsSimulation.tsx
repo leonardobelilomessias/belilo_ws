@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ContentSimulator from './ContentSimulator'
 import FinalySimulator from './FinalySimulator'
 import FormSimulator from './FormSimulator'
 import ProductsSimulator from './ProductsSimulator'
@@ -7,7 +6,7 @@ import SendSimulator from './SendSimulator'
 import Step from './Step'
 import style from './stepSimulator.styles.module.scss'
 
-function StepsSimulation({stepsTitles,stepsDescriptions,content}) {
+function StepsSimulation({stepsTitles,stepsDescriptions}:any) {
   const [service,setService] = useState([])
   const [currentStep,setCurrentStep]=useState(0)
 
@@ -16,7 +15,7 @@ function StepsSimulation({stepsTitles,stepsDescriptions,content}) {
     <h1>Simulador</h1>  
 
     <div className={style.steps}>
-      {stepsTitles.map((step,index)=>(
+      {stepsTitles.map((step:any,index:any)=>(
             <Step  key={step} title={step} 
             current={currentStep}  
             description={stepsDescriptions[index]} 

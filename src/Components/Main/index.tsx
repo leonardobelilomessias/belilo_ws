@@ -12,6 +12,7 @@ import GetPrice from './GetPrice'
 
 export function Main(){
   return(
+    <>
     <main className={style.main}>
       <FirstSection/>
 
@@ -29,5 +30,6 @@ export function Main(){
         <Contact/>
 
     </main>
+    </>
   )
 }

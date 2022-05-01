@@ -7,7 +7,7 @@ import SendSimulator from './SendSimulator';
 
 function MySimulator() {
   return (
-    <div>
+    <>
       <StepsSimulation 
       stepsTitles={['Tipo Projeto','Detalhes do projeto','Gerar simulação']} 
       stepsDescriptions={[
@@ -15,10 +15,10 @@ function MySimulator() {
       'Adicione as caracteristicas do projeto',
       'Receba as informaçoes do seu projeto'
     ]}
-      content={ProductsSimulator}
+      
       />
   
-    </div>
+    </>
   )
 }
 

@@ -8,23 +8,25 @@ const schedule= [
 ]
 function Schedule() {
   return (
+    <>
     <div className={style.container}>
       <h1>Tudo em três simples passos <br/> sem complicação.</h1>
       <div className={style.box}>
-        {schedule.map(step=>(
-          <>
-            <div key={step.number} className={style.content}>
+        {schedule.map((step,index)=>(
+
+            <div key={index} className={style.content}>
               <h2>{step.number}</h2>
               <h3>{step.title} </h3>
               <p>{step.description}</p>
             </div>
-          </>
+
         ))}
 
           </div>
 
     
     </div>
+    </>
   )
 }
 

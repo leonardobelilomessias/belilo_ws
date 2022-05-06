@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import style from './firstSection.style.module.scss'
+
 function FirstSection() {
   return (
    <>
@@ -18,8 +19,7 @@ function FirstSection() {
           </div>
         </div>
         <div className={style.imageHeadline}>
-          <div>
-          </div>
+
         </div>
       </div>
    </>

@@ -11,17 +11,17 @@ function Services() {
       <title>Serviços</title>
     </Head>
 
-    <div>  
+    <div>   
 
         <h1>Serviços</h1>
-
+ 
         <div className={style.itemSection}>
           <div className={style.imageSection} >
             <Image alt='image' src={Lead} width={600} height={300}/>
           </div>
           <div className={style.infoSection}>
             <h1>Site Estatico ou institucional </h1>
-          </div>
+          </div> 
         </div>
 
         <div className={style.itemSection}>

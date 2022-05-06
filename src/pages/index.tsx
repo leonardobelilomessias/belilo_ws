@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useCallback, useState } from 'react'
+import { useState } from 'react'
 import { Main } from '../Components/Main'
 import { FullMenu } from '../Components/FullMenu'
 
@@ -10,17 +10,15 @@ export default function Home() {
     <>
       
       <Head >
-        <title>Belilo</title>
+        <title>Filsher</title>
       </Head>
       
      {
         menux?<FullMenu menux={menux} handleMenux={handleMenux}></FullMenu>:
           <>
             <Main/>
-            
           </>
       }
-
     </>  
   )
 }

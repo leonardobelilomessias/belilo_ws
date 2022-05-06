@@ -47,7 +47,7 @@
 }
 
 .imageSectionIdea{
-  background-color: red;
+
   flex:1;
   height: 400px;
   background-image: url('../../public/idea.jpg');
@@ -57,7 +57,7 @@
 .imageSectionResult{
   flex:1;
   height: 400px;
-  background-color: red;
+
   background-image: url('../../public/result.jpg');
   background-size: cover;
   filter: brightness(0.60);
@@ -65,7 +65,7 @@
 .imageSectionDevelop{
   flex:1;
   height: 400px;
-  background-color: red;
+
   background-image: url('../../public/develop.jpg');
   background-size: cover;
   filter: brightness(0.60);
@@ -73,7 +73,7 @@
 
 .head{
 
-  background-color: red;
+
   background: url('../../public/bg-tech.jpg');
   height: 400px;
   background-size: cover;
@@ -90,6 +90,7 @@
     span{
       background-color: var(--blue-500);
       color: white;
+      text-shadow: none;
     }
   }
 }

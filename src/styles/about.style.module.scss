@@ -72,25 +72,21 @@
 }
 
 .head{
-
-
   background: url('../../public/bg-tech.jpg');
-  height: 400px;
   background-size: cover;
   display: flex;
-  align-items: center;
+  height: 90vh;
   h1{
     width: 90%;
     margin: auto;
-    color: black;
-    text-shadow: 3px 3px 5px rgb(122, 122, 122);
-    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 7rem;
     text-align: center;
+    text-shadow: 20px 20px 9px rgba(185, 184, 184, 0.842);
     
     span{
-      background-color: var(--blue-500);
-      color: white;
-      text-shadow: none;
+ 
+
     }
   }
 }

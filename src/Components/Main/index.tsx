@@ -22,7 +22,6 @@ export function Main(){
           <button>Consultoria Gratis</button>
         </section>
         <DataInfo/>
-        <Cases/>
         <Testimonals/>
         <ListServices/>
         <Contact/>

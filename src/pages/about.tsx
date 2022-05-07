@@ -11,9 +11,7 @@ function About() {
     </Head>
     <div className={style.head}>
     <h1>&quot; Democratizamos a 
-         <span> TECNOLOGIA </span>oferecendo produtos e serviços para que
-         <span>TODOS</span> tenham <span> OPORTUNIDADE </span> 
-          e de ter uma experiencia <span> DIGNA </span>  no <span> DIGITAL </span>  &quot;
+         <span> TECNOLOGIA </span>
           </h1>
     </div>
     <div className={style.firstSection}>

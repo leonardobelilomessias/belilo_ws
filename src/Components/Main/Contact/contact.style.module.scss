@@ -40,7 +40,12 @@
 }
 @media (max-width:600px) {
   .contact{
+    .itemsContact{
 
+      button{
+        width: 50%;
+      }
+    }
     flex-direction: column;
     .imgContact{
       width: 100%;

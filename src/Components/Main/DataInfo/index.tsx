@@ -20,15 +20,15 @@ function DataInfo() {
             <Image src={img1}  alt='img1' layout='intrinsic'  width={400} height={300}>
             </Image>
           </div>
-          <h1> 87,3%</h1>
-          <p>De aumento de  novos usarios pela internet</p>
+          <h1> 152 milhões </h1>
+          <p>Número de usuários de Internet no mundo chega que correnponde 63% DA POPULAÇÃO</p>
           <a href="#">Saiba mais →</a>
           
         </div>
 
         <div className={style.box}>
         <div className={style.imageBox}>
-            <Image src={img2}  alt='img1' layout='intrinsic'  width={400} height={300}>
+            <Image src={img2}  alt='img1' layout='intrinsic'  width={350} height={250}>
             </Image>
         </div>
           <h1>R$ 304 bilhões </h1>
@@ -36,16 +36,7 @@ function DataInfo() {
           <a href="#">Saiba mais →</a>
         </div>
 
-        <div className={style.box}>
-        <div className={style.imageBox}>
-            <Image src={img3}  alt='img1' layout='intrinsic'  width={400} height={300}>
-            </Image>
-        </div>
-        <h1 > 97% </h1>
-        <p>Dos idosos acessam a internet, aponta pesquisa da CNDL/SPC Brasil</p>
-        <a href="#">Saiba mais →</a>
-
-        </div>
+       
       </div>
     </div>
     

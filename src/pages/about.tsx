@@ -10,12 +10,18 @@ function About() {
       <title>Sobre</title>
     </Head>
     <div className={style.head}>
-    <h1>&quot; Democratizamos a 
-         <span> tecnologia </span>
-          </h1>
+
     </div>
+    <div className={style.title}>
+      <h1>Bem vindo a democratização da tecnologia</h1>
+      <p>
+        Nossa missão é fornecer produtos da mais alta qualidade de forma acessivel para o maior numero de pessoas.
+        Portanto desenvolvemos ferramentas poderosas porem de simples manuseio, facilitando com que o usuario final tenha 
+        plena capacidade de gerenciar seus planos no mundo digital
+      </p>
+      </div>
     <div className={style.firstSection}>
-      
+      <h1 className={style.moreAbout}>Um pouco mais sobre nós:</h1>
     <div className={style.itemSection}>
       <div className={style.imageSectionIdea}></div>
       <div className={style.infoSection}>
@@ -29,7 +35,7 @@ function About() {
 
     </div>
     
-    <div className={style.itemSection}>
+    <div className={style.itemSection} id={style.rowReverse}>
     <div className={style.imageSectionResult}></div>
       <div className={style.infoSection}>
         <h1>Oque Fazemos?</h1>

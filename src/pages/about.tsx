@@ -10,8 +10,6 @@ function About() {
       <title>Sobre</title>
     </Head>
     <div className={style.head}>
-
-    </div>
     <div className={style.title}>
       <h1>Bem vindo a democratização da tecnologia</h1>
       <p>
@@ -20,6 +18,8 @@ function About() {
         plena capacidade de gerenciar seus planos no mundo digital
       </p>
       </div>
+    </div>
+
     <div className={style.firstSection}>
       <h1 className={style.moreAbout}>Um pouco mais sobre nós:</h1>
     <div className={style.itemSection}>

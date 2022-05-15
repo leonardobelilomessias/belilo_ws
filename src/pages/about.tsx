@@ -6,7 +6,7 @@ import style from '../styles/about.style.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
 import Team from '../../public/banner.jpg';
-import { bigTechs } from './bigTechs';
+import bigTechs  from './bigTechs';
 const infoBox = [
   {title:'Quem somos ?',subTitle:'Somos Experts em Executar Ideias',description:'Fazemos produtos, ideias, sonhos e negocios sair do campo da imaginação e colocamos em pratica no mundo digital.'
   ,img:Result,cta:'Ver Serviços'},

@@ -14,16 +14,40 @@
     background-size: contain;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgb(226, 223, 223);
     .title{
-      width: 80%;
       text-align: center;
+      width: 65%;
       h1{
-        font-size: 3rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        
       }
       p{
         color: rgb(59, 59, 59);
         font-size: 1.5rem;
+        
       }
+    }
+  }
+
+  .moreAbout{
+    font-size: 3rem;
+    position: relative;
+    margin: 2.5rem auto;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 6px rgb(179, 176, 176);
+    &::after{
+      content: ' ';
+      display: block;
+      width: 300px;
+      height: 6px;
+      background-color: var(--blue-500);
+      position: absolute;
+      bottom: -10px;
+      right:calc(50% - 300px / 2);
+
+      
     }
   }
 
@@ -35,11 +59,15 @@
     .itemSection{
       display: flex;
       flex-wrap: wrap;
-      width: 80%;
+      width: 90%;
       align-items: center;
-      justify-content: space-around;
+      align-content: center;
+      justify-items: center;
+      justify-content: space-between;
       margin: 2rem auto;
       background-color: rgba(255, 255, 255, 0.404);
+      border-bottom: 1px solid rgb(218, 218, 218);
+      padding-bottom: 2rem;
 
 
 
@@ -66,7 +94,9 @@
         }
         h2{
           font-size: 3rem;
-
+        }
+        p{
+          width: 80%;
         }
         button{
           color: white;
@@ -87,4 +117,80 @@
 
 .rowReverse{
   flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: space-around;
   }
+
+.secondSection{
+  width: 100%;
+  min-height: 500px;
+  background-color: var(--blue-500);
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+
+  .imageSecondSection{
+    position: relative;
+    flex: 1;
+    min-width: 370px;
+    min-height: 370px;
+
+  }
+  .textSecondSection{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    padding: 2rem;
+
+    h1{
+      font-size: 3.8rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    p{
+      margin: 1rem 0;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    button{
+      width: 250px;
+      height: 80px;
+      border: 1px solid white ;
+      color: white;
+      background-color: transparent;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+.felows{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--blue-200);
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 ;
+  }
+  .company{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+      position: relative;
+      width: 50%;
+      height: 100px;
+      color: white;
+      padding: 1rem;
+      padding: 2rem;
+      
+    }
+    .alterColor{
+      background-color: white;
+      color: black;
+    }
+  }
+}

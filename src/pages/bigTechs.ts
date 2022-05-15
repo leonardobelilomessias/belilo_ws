@@ -4,7 +4,7 @@ import Google from '../../public/img/brands/goole.png'
 import Mac from '../../public/img/brands/mac.png'
 import Micro from '../../public/img/brands/micro.png'
 
-export const bigTechs = [
+ const bigTechs = [
   {
     name: 'Google',
     img: Google
@@ -26,3 +26,5 @@ export const bigTechs = [
     img: Micro
   },
 ]
+
+export default bigTechs

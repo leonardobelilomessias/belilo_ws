@@ -6,7 +6,8 @@ import style from '../styles/about.style.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
 import Team from '../../public/banner.jpg';
-import bigTechs  from '../utils/bigTechs';
+import bigTechs from '../utils/bigTechs';
+import Hand from '../../public/hand.jpg'
 const infoBox = [
   {title:'Quem somos ?',subTitle:'Somos Experts em Executar Ideias',description:'Fazemos produtos, ideias, sonhos e negocios sair do campo da imaginação e colocamos em pratica no mundo digital.'
   ,img:Result,cta:'Ver Serviços'},
@@ -28,11 +29,21 @@ function About() {
         <h1>A democratização da tecnologia</h1>
         <p>
           Nossa missão é fornecer produtos da mais alta qualidade de forma acessivel para o maior numero de pessoas.
-          Portanto desenvolvemos ferramentas poderosas porem de simples manuseio.
         </p>
         </div>
       </div>
+        <div className={style.mean}>
+          <div className={style.imageMean}><Image alt='hand 'src={Hand} layout='fill' objectFit='cover' /></div>
+          <div className={style.textMean}> <h1> Fil.Sher (s.m)</h1>
+            <span>Grego : filo = amigo <br />
+              sheri = mão. 
+            </span>
+            <p>Mão amiga que auxilia, colabora ou executa atividades com seu companheiro de trabalho ou de guerra a fim 
+              de conquistar o mais excelente exito.
 
+            </p>
+          </div>
+      </div>
     <div className={style.firstSection}>
           <h1 className={style.moreAbout}>Um pouco mais sobre nós:</h1>
           

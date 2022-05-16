@@ -17,10 +17,11 @@
     border-bottom: 1px solid rgb(226, 223, 223);
     .title{
       text-align: center;
-      width: 65%;
+
       h1{
-        font-size: 2rem;
+        font-size: 3rem;
         text-transform: uppercase;
+        
         
       }
       p{
@@ -32,17 +33,17 @@
   }
 
   .moreAbout{
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: relative;
     margin: 2.5rem auto;
     text-transform: uppercase;
-    text-shadow: 4px 4px 6px rgb(179, 176, 176);
+    text-shadow: 4px 4px 6px rgb(207, 205, 205);
     &::after{
       content: ' ';
       display: block;
       width: 300px;
       height: 6px;
-      background-color: var(--blue-500);
+      background-color:rgb(59, 156, 247);
       position: absolute;
       bottom: -10px;
       right:calc(50% - 300px / 2);
@@ -50,7 +51,34 @@
       
     }
   }
-
+  .mean{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    .imageMean{
+      position: relative;
+      flex: 1;
+      min-width: 400px;
+      
+    }
+    .textMean{
+      background-color: var(--blue-200);
+      flex: 1;
+      min-width: 400px;
+      h1{
+        font-size: 3.6rem;
+        color: var(--blue-500);
+      }
+      span{
+        font-size: 1.5rem;
+        color: gray;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
   .firstSection{
     display: flex;
     flex-direction: column;
@@ -129,6 +157,7 @@
   color: white;
   flex-wrap: wrap;
 
+
   .imageSecondSection{
     position: relative;
     flex: 1;
@@ -170,22 +199,28 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--blue-200);
+
+  padding: 2rem 0;
   h1{
     font-size: 3rem;
     text-align: center;
-    margin: 2rem 0 ;
+    margin: 1rem 0 ;
   }
   .company{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     div{
       position: relative;
-      width: 50%;
+      width: 30%;
       height: 100px;
       color: white;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #cfeaff;
+      box-shadow: 2px 2px 9px #b3deff;
       padding: 1rem;
-      padding: 2rem;
+      margin: 1px;
+
       
     }
     .alterColor{

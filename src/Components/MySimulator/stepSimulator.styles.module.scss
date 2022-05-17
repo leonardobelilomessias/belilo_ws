@@ -12,8 +12,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      
+
       .stepIcon{
         margin: 8px;
+
       }
       .current{
         p{
@@ -29,7 +32,7 @@
 
 }
 .containerSimulator{
-
+  
   min-height: 800px;
   display: flex;
   flex-direction: column;
@@ -37,6 +40,7 @@
   margin:  auto;
   padding: 1rem 2rem;
   align-items: center;
+  
   div{
     display: flex;
     margin: 0px;

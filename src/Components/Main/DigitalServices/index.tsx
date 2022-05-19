@@ -1,5 +1,9 @@
 import React from 'react'
 import style from './digitalServices.style.module.scss'
+import Image from 'next/image'
+import Business from '../../../../public/business.png'
+import Express from '../../../../public/express.png'
+import Premium from '../../../../public/Premium.png'
 function DigitalServices() {
   return (
    <>
@@ -9,39 +13,52 @@ function DigitalServices() {
         </div>
         <div className={style.boxContainer}>
             <div className={style.content}>
-                <h2>Site Pessoal ou Empresarial</h2>
-                <p>ideal para empresas e blogs pessoas</p>
+            <h2>Express</h2>
+            <Image alt='' src={Express} layout='fixed' width={ 70} height={70} />
+                <p>Site Completamente pronto em 72 horas.</p>
                 <ul>
-                  <li>compartilhe ideias</li>
-                  <li>Resonsividade:compativel com todos tipo de telas</li>
-                  <li>Padinas rapidas</li>
+                  <li>Dominio Gratis ex: nomedoseusite.com</li>
+                  <li>Email profissinal Ex.:seunome@seusite.com </li>
+                  <li>Compativel com todas as telas</li>
+                  <li>certificado ssl contra invasores</li>
+                  <li>Paginas rapidas</li>
+
                 </ul>
                   <p>apartir de </p>
-                <h2>R$597,90</h2>
+            <h3>R$597,90</h3>
+          <button> Saiba mais</button>
         </div>
         
         <div className={style.content}>
-                <h2>Site Pessoal ou Empresarial</h2>
-                <p>ideal para empresas e blogs pessoas</p>
+            <h2>Business</h2>
+            <Image alt='' src={Business} layout='fixed' width={ 70} height={70} />
+                <p>Configuração completa para receber pagamentos</p>
                 <ul>
-                  <li>compartilhe ideias</li>
-                  <li>Resonsividade:compativel com todos tipo de telas</li>
-                  <li>Padinas rapidas</li>
+                  <li>Dominio Gratis ex: nomedoseusite.com</li>
+                  <li>Email profissinal Ex.:seunome@seusite.com </li>
+                  <li>Compativel com todas as telas</li>
+                  <li>certificado ssl contra invasores</li>
+                  <li>Checkout de pagamento</li>
                 </ul>
                   <p>apartir de </p>
-                <h2>R$597,90</h2>
+                  <h3>R$697,90</h3>
+          <button> Saiba mais</button>
         </div>
         
         <div className={style.content}>
-                <h2>Site Pessoal ou Empresarial</h2>
-                <p>ideal para empresas e blogs pessoas</p>
+            <h2>Premium</h2>
+            <Image alt='' src={Premium}  layout='fixed' width={ 70} height={70} />
+                <p>Peformace e gerenciamento de negocios.</p>
                 <ul>
-                  <li>compartilhe ideias</li>
-                  <li>Resonsividade:compativel com todos tipo de telas</li>
-                  <li>Padinas rapidas</li>
+                  <li>Dashboards estilizadas e personalizadas.</li>
+                  <li>Conexão com serviços externos.</li>
+              <li>Gestão e gerenciamento de equipe e produtos.</li>
+              <li>Aplicativos mobile nas principais lojas de apps.</li>
+              <li>Informaçoes em tempo real.</li>
                 </ul>
                   <p>apartir de </p>
-                <h2>R$597,90</h2>
+                  <h3>R$1987,90</h3>
+          <button> Saiba mais</button>
         </div>
         </div>
         </section>

@@ -1,7 +1,7 @@
 .container{
   display: flex;
   flex-direction: column;
-  background-color: var(--blue-200);
+
   h1{
     font-size: 3rem;
     text-align: center;
@@ -9,21 +9,86 @@
 
   }
   .content{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 2rem 1rem; 
+    text-align: center;
+    box-shadow: 5px 5px 20px rgb(141, 203, 245);
+    flex: 1;
+    align-items: center;
+    button{
+      margin: 1rem auto;
+      border: 1px solid var(--blue-500);
+      color: var(--blue-500);
+      width: 250px;
+      height: 45px;
+      font-size: 1.5rem;
+      justify-self: flex-end;
+      
+    }
+    
     h2{
+      font-size: 2.5rem;
+      margin: 2rem;
+    }
+    h3{
+      font-size: 2rem;
       color: var(--blue-500);
     }
-    border: 1px solid var(--blue-500);
-    margin: 1rem; 
-    text-align: center;
     ul{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
       list-style: none;
+      margin-top: 2rem;
+
+
+      li{
+        display: flex;
+        flex: 1;
+        position: relative;
+        width: 60%;
+        margin: 0.5rem auto;
+        text-align: left;
+        color: rgb(71, 71, 71);
+        font-size: 1.2rem;
+
+
+        
+       &::before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -15px;
+        font-weight: bolder;
+        margin-right: 8px;
+        background-color: var(--blue-500);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+       }
+      }
+    }
+    img{  
+      flex-grow: 0;
+      margin: auto;
+    }
+    p{
+      font-weight: bold;
+      margin-top: 0.5rem;
     }
 
   }
 }
 
 .boxContainer{
+  background: url('../../../../public/back.jpg') ;
+  background-size: 1080px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

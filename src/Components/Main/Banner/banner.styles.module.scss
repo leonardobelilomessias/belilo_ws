@@ -23,3 +23,18 @@
   }
   
 }
+
+@media(max-width:600px) {
+  .text{
+    h1{
+    font-size: 2rem;
+    position: absolute;
+    width: 62%;
+    background-color: rgba(51, 51, 51, 0.582);
+    right: 20px;
+    top: 20%;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+}

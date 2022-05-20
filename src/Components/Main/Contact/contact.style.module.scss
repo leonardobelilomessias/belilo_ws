@@ -6,25 +6,29 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  
   .imgContact{
+    display: flex;
     flex: 1;
     background-color: violet;
-    background: url('../../../../public/woman-1.jpg');
+    background: url('../../../../public/woman.jpg');
     background-size: cover;
     height: 500px;
- 
+    align-items: center;
   }
 
   .itemsContact{
+    display: flex;
+    flex-direction: column;
     min-width: 350px;
-
-    flex: 1;
+    width: 50%;
+    margin-left: auto;
+    align-items: center;
+    
     h1{
       font-size: 2rem;
       font-weight: 900;
-      max-width: 900px;
-      margin-bottom: 30px;
-      
+
     }
     button{
       background-color: var(--blue-500);
@@ -35,21 +39,32 @@
       border-radius: 3px;
       font-size: 1.2rem;
       font-weight: 600;
+      margin: 2rem 0;
     }
   }
 }
 @media (max-width:600px) {
   .contact{
     .itemsContact{
-
+      
+      h1{
+        font-size: 1rem;
+        color: white;
+        background-color: rgba(48, 48, 48, 0.658);
+      }
       button{
         width: 50%;
+        margin-top: 1rem;
       }
     }
     flex-direction: column;
     .imgContact{
+      align-items: flex-end;
+      justify-items: end;
       width: 100%;
       min-height: 300px;
+      background-size: cover;
+      background: url('../../../../public/contactus.jpg');
       background-size: cover;
 
 

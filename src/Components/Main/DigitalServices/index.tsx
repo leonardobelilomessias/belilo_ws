@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './digitalServices.style.module.scss'
 import Image from 'next/image'
-import Business from '../../../../public/business.png'
-import Express from '../../../../public/express.png'
-import Premium from '../../../../public/Premium.png'
+import Business from '../../../../public/business.jpg'
+import Express from '../../../../public/express.jpg'
+import Premium from '../../../../public/Premium.jpg'
 function DigitalServices() {
   return (
    <>

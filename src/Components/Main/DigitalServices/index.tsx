@@ -3,7 +3,7 @@ import style from './digitalServices.style.module.scss'
 import Image from 'next/image'
 import Business from '../../../../public/business.jpg'
 import Express from '../../../../public/express.jpg'
-import Premium from '../../../../public/Premium.jpg'
+import Premium from '../../../../public/premium.jpg'
 function DigitalServices() {
   return (
    <>

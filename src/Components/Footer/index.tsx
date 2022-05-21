@@ -1,12 +1,16 @@
 import style from './styles.module.scss'
+import {FiYoutube,FiInstagram} from 'react-icons/fi'
 export function Footer(){
   return(
     <footer className={style.footer}>
       <div className={style.allContent}>
-      <h1>Belilo</h1>
+      <h1>Filsher</h1>
       <div className={style.midias}>
-        <h3>Midias sociais</h3>
-        <p>Youtube   |  Intagram </p>
+          <h3>Midias sociais</h3>
+          <div className={style.logo}>
+            <p ><FiYoutube size={20} /><span>Youtube</span></p> 
+            <p><FiInstagram size={20} /><span>Instagram</span>  </p>
+          </div>
 
       </div>
 

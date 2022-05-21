@@ -14,12 +14,15 @@ function MyApp({ Component, pageProps }:AppProps) {
   }
   return (
     <>
-    {menux?<FullMenu menux={menux} handleMenux={handleMenux}></FullMenu>:<>
-    <Header menux ={menux} handleMenux={handleMenux}></Header>
-    <Component {...pageProps} /></>
+      {menux ? <FullMenu menux={menux} handleMenux={handleMenux}/> :
+        <>
+        <Header menux ={menux} handleMenux={handleMenux}></Header>
+        <Component {...pageProps} />
+        <Footer/>
+        </>
     }
     
-    <Footer/>
+    
   </>
   )
 }

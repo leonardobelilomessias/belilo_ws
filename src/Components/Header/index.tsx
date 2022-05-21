@@ -3,6 +3,7 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import {RiUserShared2Line} from 'react-icons/ri'
 
 type HeaderProps =  {
   menux: boolean
@@ -17,8 +18,6 @@ export function Header({menux,handleMenux}:HeaderProps){
   return(
     <>
   <header className={style.customHeader}>
-     
-    
     <Link href="/">
       <a onClick={()=>{setPath("/")}}>
         <h1> filsher </h1> 
@@ -53,7 +52,7 @@ export function Header({menux,handleMenux}:HeaderProps){
       </Link>
     </nav>
     <AiOutlineMenu  className={style.showMenu} size={30} onClick={handleMenux}/>
-
+        <div className={style.clientArea}> <RiUserShared2Line size={16} /> <p>Área do cliente</p></div>
   </header>
 
     

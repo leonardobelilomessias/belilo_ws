@@ -1,9 +1,8 @@
 .customHeader{
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 90px;
   padding: 0 5rem;
   max-width: 100vw;
   z-index: 10;
@@ -13,6 +12,9 @@
   }
 
   .nav{
+    font-family: "Poppins";
+    text-transform: lowercase;
+    text-transform: capitalize;
     @media only screen and (max-width: 600px) {
         display: none;
     }
@@ -29,10 +31,10 @@
       justify-content: space-around;
       color: rgba(51, 51, 51, 0.705);
       font-weight: 400;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-align: center;
       min-width: 100px;
-      text-transform: uppercase;
+
 
       p{
         display: flex;
@@ -40,7 +42,7 @@
         flex: 1;
         align-items: center;
         justify-content: center;
-        padding: 0px 1.3rem;
+
       }
       div{
         height: 5px;
@@ -97,6 +99,7 @@
   .customHeader {
     background-color: white;
 
+
     z-index: 10;
     position: relative;
     
@@ -107,5 +110,19 @@
   }
   .nav{
     display: none;
+  }
+}
+.clientArea{
+  @media only screen and (max-width: 600px) {
+    display: none;
+}
+  display: flex;
+  flex-direction: row;
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+  padding: 6px;
+  border-radius: 4px;
+  p{
+    margin-left: 6px;
   }
 }

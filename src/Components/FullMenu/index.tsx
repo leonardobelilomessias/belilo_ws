@@ -12,9 +12,7 @@ export function FullMenu({menux,handleMenux}:FullMenuProps){
     <p>MENU</p>
     <Link href="/"><a> Inicio</a></Link>
     <Link href="/about"><a> Sobre</a></Link>
-      <a href="#">Serviços</a>
-      <a href="#">Preços</a>
-      <a href="#">Contato</a>
+    <Link href="/contact"><a> Sobre</a></Link>
 
     <button onClick={handleMenux}>Fechar</button>
     </nav>

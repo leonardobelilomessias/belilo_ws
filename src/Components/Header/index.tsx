@@ -38,12 +38,12 @@ export function Header({menux,handleMenux}:HeaderProps){
       </a>
     </Link>
 
-    <Link href="/simulator">
+   {/*  <Link href="/simulator">
       <a className={router.asPath ==="/simulator"?style.active:''}>
       <p>Simulador</p> 
       <div/>
       </a>
-    </Link>
+    </Link> */}
     <Link href="contact">
       <a className={router.asPath ==="/contact"?style.active:''}>
       <p>contato</p> 

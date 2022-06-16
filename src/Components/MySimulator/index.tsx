@@ -9,15 +9,13 @@ function MySimulator() {
   return (
     <>
       <StepsSimulation 
-      stepsTitles={['Tipo Projeto','Detalhes do projeto','Gerar simulação']} 
-      stepsDescriptions={[
-      'Escolha o tipo de projeto', 
-      'Adicione as caracteristicas do projeto',
-      'Receba as informaçoes do seu projeto'
-    ]}
-      
+            stepsTitles={['Tipo Projeto','Detalhes do projeto','Gerar simulação']} 
+            stepsDescriptions={[
+            'Escolha o tipo de projeto', 
+            'Adicione as caracteristicas do projeto',
+            'Receba as informaçoes do seu projeto'
+          ]}
       />
-  
     </>
   )
 }

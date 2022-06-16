@@ -9,7 +9,7 @@ function Contact() {
           <h1>Contato</h1>
       <div className={style.content}>
           <div className={style.img}>
-            <Image src={contactUs} alt='contact' layout='fill' objectFit='fill'/> 
+            <Image src={contactUs} alt='contact' layout='fill' objectFit='cover'/> 
           </div>
           <form action="">
             <label htmlFor="email">Email</label>

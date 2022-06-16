@@ -32,28 +32,17 @@ function About() {
         </p>
         </div>
       </div>
-        <div className={style.mean}>
-          <div className={style.imageMean}><Image alt='hand 'src={Hand} layout='fill' objectFit='cover' /></div>
-          <div className={style.textMean}> <h1> Fil.Sher (s.m)</h1>
-            <span>Grego : filo = amigo <br />
-              sheri = mão. 
-            </span>
-            <p>Mão amiga que auxilia, colabora ou executa atividades com seu companheiro de trabalho ou de guerra a fim 
-              de conquistar o mais excelente exito.
-
-            </p>
-          </div>
-      </div>
+        
     <div className={style.firstSection}>
           <h1 className={style.moreAbout}>Um pouco mais sobre nós:</h1>
           
           {infoBox.map(({title,subTitle,cta,description,img},index) => (
             <>
             <div key={title} className={`${style.itemSection} ${index==1 && style.rowReverse}`}>
-            <div className={style.imageSection}>
-              <Image alt='result'src={img} layout='fill' objectFit='cover' />  
-            </div>
-                <div className={style.infoSection}>
+              <div className={style.imageSection}>
+                <Image alt='result'src={img} layout='fill' objectFit='cover' />  
+              </div>
+              <div className={style.infoSection}>
 
                     <h1>{title}</h1>
                     <h2>{subTitle}</h2>

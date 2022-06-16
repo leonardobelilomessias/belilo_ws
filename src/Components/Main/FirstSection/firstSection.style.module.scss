@@ -11,8 +11,7 @@
 .imageHeadline{
   position: relative;
   flex: 1;
-  background:url('../../../../public/touchid.png') no-repeat;
-  background-size: 110%;
+
 }
 
 .headLine{
@@ -73,7 +72,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    min-height: 100vh;
   }
   .imageHeadline{
     flex: 1;
@@ -100,12 +98,14 @@
   }
   .textHeadline{
     text-align: center;
-    margin: 0;
+    margin: 0px;
     align-items: center;
-    justify-content: center;
+
 
     .buttonHeadline{
       margin:5px 0;
+      min-width: 40px;
+      min-height: 50px;
       z-index: 9999;
       }
   

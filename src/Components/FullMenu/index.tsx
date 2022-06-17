@@ -10,9 +10,9 @@ export function FullMenu({menux,handleMenux}:FullMenuProps){
     <>
     <nav className={style.menu}>
     <p>MENU</p>
-    <Link href="/"><a> Inicio</a></Link>
-    <Link href="/about"><a> Sobre</a></Link>
-    <Link href="/contact"><a> Sobre</a></Link>
+    <Link href="/"><a onClick={handleMenux}> Inicio</a></Link>
+    <Link href="/about"><a onClick={handleMenux}> Sobre</a></Link>
+    <Link href="/contact"><a onClick={handleMenux}> Contato</a></Link>
 
     <button onClick={handleMenux}>Fechar</button>
     </nav>

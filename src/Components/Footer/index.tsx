@@ -6,7 +6,7 @@ export function Footer(){
       <div className={style.allContent}>
       <h1>Filsher</h1>
       <div className={style.midias}>
-          <h3>Midias sociais</h3>
+          <h3></h3>
           <div className={style.logo}>
             <p ><FiYoutube size={20} /><span>Youtube</span></p> 
             <p><FiInstagram size={20} /><span>Instagram</span>  </p>
@@ -24,7 +24,7 @@ export function Footer(){
         </ul>
         </div>
         </div>
-        <div  className={style.finishLabel}>Feito por Belilo | 2022</div>
+        <div  className={style.finishLabel}><p></p></div>
     </footer>
   )
 }

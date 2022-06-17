@@ -3,17 +3,19 @@
   flex-direction: column;
   background-color:#505563 ;
   color: white;
-  padding-bottom: 20px;
+
   .finishLabel{
-    margin: auto;
+    text-align: center;
+    background-color: red;
+    p{
+      background-color: aqua;
+    }
   }
 
 
 .allContent{
   display: flex;
-
   padding: 40px;
-
   height: 200px;
   justify-content: space-between;
   
